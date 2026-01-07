@@ -44,29 +44,41 @@ jobs:
           set -e  # 오류 발생 시 즉시 중단
           mkdir -p dist
           
+          echo "📂 Available slides:"
+          ls -la slides/
+          
           # slides 폴더의 각 슬라이드 빌드
           for dir in slides/*/; do
             slide_name=$(basename "$dir")
             
-            if [ -f "$dir/slides.md" ]; then
-              echo "Building: $slide_name"
-              npx slidev build "$dir/slides.md" --base /${{ steps.repo.outputs.name }}/$slide_name/ --out dist/$slide_name
+            if [ -f "${dir}slides.md" ]; then
+              echo "🔨 Building: $slide_name"
+              npx slidev build "${dir}slides.md" --base /${{ steps.repo.outputs.name }}/$slide_name/ --out dist/$slide_name
               echo "✅ Built: $slide_name"
+            else
+              echo "⚠️ No slides.md found in $dir"
             fi
           done
+          
+          echo "📋 Built slides in dist/:"
+          ls -la dist/
           
           # 인덱스 페이지 생성 (빌드 성공 후)
           echo '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Slides</title><style>body{font-family:system-ui;max-width:800px;margin:50px auto;padding:20px}h1{border-bottom:2px solid #333}ul{list-style:none;padding:0}li{margin:10px 0}a{color:#0066cc;text-decoration:none;font-size:18px}a:hover{text-decoration:underline}</style></head><body><h1>📊 Slides</h1><ul>' > dist/index.html
           
-          for dir in dist/*/; do
-            slide_name=$(basename "$dir")
-            echo "<li><a href=\"./$slide_name/\">📑 $slide_name</a></li>" >> dist/index.html
+          # 실제 빌드된 폴더만 인덱스에 추가
+          for slide_dir in dist/*/; do
+            if [ -d "$slide_dir" ]; then
+              slide_name=$(basename "$slide_dir")
+              echo "<li><a href=\"./$slide_name/\">📑 $slide_name</a></li>" >> dist/index.html
+              echo "📌 Added to index: $slide_name"
+            fi
           done
           
           echo '</ul></body></html>' >> dist/index.html
           
-          echo "📋 Built slides:"
-          ls -la dist/
+          echo "📄 Final index.html:"
+          cat dist/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
