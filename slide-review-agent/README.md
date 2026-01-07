@@ -27,17 +27,15 @@ pip install -e ".[dev]"
 ## 환경 설정
 
 ```bash
-# .env.example을 복사하여 .env 파일 생성
-cp .env.example .env
+# 환경변수 파일 생성 (절대 커밋하지 마세요)
+cp .env.example .env.local
 
-# AWS Bedrock API 키 설정
-export AWS_BEDROCK_API_KEY=your_bedrock_api_key
-
-# 또는 AWS 자격 증명 설정
-export AWS_ACCESS_KEY_ID=your_access_key
-export AWS_SECRET_ACCESS_KEY=your_secret_key
-export AWS_REGION=us-east-1
 ```
+
+**보안 주의사항:**
+- `.env.local` 파일은 개인 로컬 설정용입니다
+- 절대 Git에 커밋하지 마세요
+- AWS CLI Profile 사용을 권장합니다: `aws configure --profile slides`
 
 ## 사용법
 
@@ -82,4 +80,43 @@ slide-review-agent/
 ├── tests/                    # 테스트
 ├── pyproject.toml
 └── README.md
+```
+
+## CLI 사용법
+
+```bash
+# 슬라이드 검토 (Agent 모드)
+python cli.py review ../slides/kubernetes-basics/slides.md
+
+# 슬라이드 목록 조회
+python cli.py list
+
+# 슬라이드 이름 검증
+python cli.py validate my-presentation
+
+# 슬라이드 생성
+python cli.py create 20260107-docker-basics
+
+# 대화 모드
+python cli.py chat
+```
+
+### 프로젝트 루트에서 실행
+
+```bash
+# 스크립트 사용 (권장)
+./scripts/review-slide.sh kubernetes-basics
+```
+
+## 환경변수
+.env.local 파일에 설정
+
+## 테스트
+
+```bash
+# 모든 테스트 실행
+python -m pytest tests/ -v
+
+# 특정 테스트
+python -m pytest tests/test_components.py -v
 ```

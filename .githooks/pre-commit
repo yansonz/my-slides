@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# 보안 파일 커밋 방지 (.env, .env.local, .env.*.local 등)
+if git diff --cached --name-only | grep -E "\.env(\.|$)"; then
+    echo "❌ 환경변수 파일이 커밋에 포함되어 있습니다!"
+    echo "다음 파일들을 확인하세요:"
+    git diff --cached --name-only | grep -E "\.env(\.|$)"
+    echo ""
+    echo "💡 해결 방법:"
+    echo "  git reset HEAD <파일명>  # 스테이징에서 제거"
+    echo "  .gitignore에 추가되어 있는지 확인하세요"
+    exit 1
+fi
+
+# 기타 보안 파일 패턴 검사
+if git diff --cached --name-only | grep -E "\.(key|secret|pem|p12|pfx)$"; then
+    echo "❌ 보안 파일(.key, .secret, .pem 등)이 커밋에 포함되어 있습니다!"
+    echo "다음 파일들을 확인하세요:"
+    git diff --cached --name-only | grep -E "\.(key|secret|pem|p12|pfx)$"
+    exit 1
+fi
+
+# AWS 키 패턴 검사 (파일 내용)
+if git diff --cached | grep -E "(AWS_ACCESS_KEY_ID|AWS_SECRET_ACCESS_KEY|AKIA[0-9A-Z]{16})"; then
+    echo "❌ AWS 자격 증명이 커밋 내용에 포함되어 있습니다!"
+    echo ""
+    echo "💡 해결 방법:"
+    echo "  1. 해당 내용을 제거하거나 주석 처리"
+    echo "  2. .env.local 파일로 분리"
+    echo "  3. AWS CLI Profile 사용 권장"
+    exit 1
+fi
+
+# 기타 민감한 키 패턴 검사
+if git diff --cached | grep -E "(password|token|secret|api_key|private_key)" | grep -E "=.+"; then
+    echo "⚠️  민감할 수 있는 정보가 감지되었습니다:"
+    git diff --cached | grep -E "(password|token|secret|api_key|private_key)" | grep -E "=.+"
+    echo ""
+    echo "💡 확인해 주세요:"
+    echo "  - 실제 값이 아닌 예시/템플릿인지 확인"
+    echo "  - 민감한 정보라면 .env.local로 분리"
+    echo ""
+    read -p "계속 진행하시겠습니까? (y/N): " -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        exit 1
+    fi
+fi
+
+echo "✅ 보안 검사 통과"

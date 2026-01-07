@@ -73,6 +73,16 @@ npm run export:pptx -- slides/kubernetes-basics/slides.md
 
 ### 5. 슬라이드 검토 (AI Agent)
 
+**환경 설정:**
+```bash
+# 1. 환경변수 파일 생성 (절대 커밋하지 마세요)
+cp slide-review-agent/.env.example slide-review-agent/.env.local
+
+# 2. AWS 자격 증명 설정
+# slide-review-agent/.env.local 파일을 편집하여 실제 값 입력
+```
+
+**슬라이드 검토:**
 ```bash
 # AI Agent를 통한 슬라이드 검토
 ./scripts/review-slide.sh kubernetes-basics
@@ -84,7 +94,7 @@ Agent가 슬라이드를 분석하여 다음을 제공합니다:
 - 네이밍 컨벤션 준수 여부 확인
 - 강점, 개선 사항, 구체적 제안
 
-> **참고:** Agent 사용을 위해 AWS Bedrock 자격 증명이 필요합니다.
+> **보안:** `.env.local` 파일은 개인 로컬 설정용이며 Git에 커밋되지 않습니다.
 
 ### 6. 정적 사이트 빌드
 
