@@ -50,11 +50,6 @@ jobs:
           for dir in slides/*/; do
             slide_name=$(basename "$dir")
             
-            # sample 폴더는 제외 (템플릿 가이드)
-            if [ "$slide_name" = "sample" ]; then
-              continue
-            fi
-            
             if [ -f "$dir/slides.md" ]; then
               echo "Building: $slide_name"
               npx slidev build "$dir/slides.md" --base /${{ steps.repo.outputs.name }}/$slide_name/ --out dist/$slide_name
