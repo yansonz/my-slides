@@ -53,7 +53,7 @@ jobs:
             
             if [ -f "${dir}slides.md" ]; then
               echo "🔨 Building: $slide_name"
-              npx slidev build "${dir}slides.md" --base /${{ steps.repo.outputs.name }}/$slide_name/ --out "$(pwd)/dist/$slide_name"
+              npx slidev build "${dir}slides.md" --base /$slide_name/ --out "$(pwd)/dist/$slide_name"
               echo "✅ Built: $slide_name"
             else
               echo "⚠️ No slides.md found in $dir"
@@ -76,6 +76,9 @@ jobs:
           done
           
           echo '</ul></body></html>' >> dist/index.html
+          
+          # 커스텀 도메인 설정
+          echo "slides.yanbert.com" > dist/CNAME
           
           echo "📄 Final index.html:"
           cat dist/index.html
