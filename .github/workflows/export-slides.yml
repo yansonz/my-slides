@@ -1,11 +1,7 @@
 name: 슬라이드 내보내기
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'slides/**'
-  workflow_dispatch:
+  workflow_dispatch:  # 수동 실행만 가능
 
 jobs:
   export:
