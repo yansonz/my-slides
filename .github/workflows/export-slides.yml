@@ -23,7 +23,9 @@ jobs:
       run: npm install
     
     - name: Playwright 설치
-      run: npx playwright install chromium
+      run: |
+        npm i -D playwright-chromium
+        npx playwright install chromium
     
     - name: 슬라이드 내보내기
       run: |
