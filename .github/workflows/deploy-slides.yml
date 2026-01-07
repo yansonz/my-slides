@@ -1,0 +1,86 @@
+name: Deploy Slides to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'slides/**'
+  workflow_dispatch:  # 수동 실행 가능
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright (for PDF export)
+        run: npx playwright install chromium
+
+      - name: Get repository name
+        id: repo
+        run: echo "name=${GITHUB_REPOSITORY#*/}" >> $GITHUB_OUTPUT
+
+      - name: Build all slides
+        run: |
+          mkdir -p dist
+          
+          # 인덱스 페이지 생성
+          echo '<!DOCTYPE html><html><head><meta charset="utf-8"><title>Slides</title><style>body{font-family:system-ui;max-width:800px;margin:50px auto;padding:20px}h1{border-bottom:2px solid #333}ul{list-style:none;padding:0}li{margin:10px 0}a{color:#0066cc;text-decoration:none;font-size:18px}a:hover{text-decoration:underline}</style></head><body><h1>📊 Slides</h1><ul>' > dist/index.html
+          
+          # slides 폴더의 각 슬라이드 빌드
+          for dir in slides/*/; do
+            slide_name=$(basename "$dir")
+            
+            # sample 폴더는 제외 (템플릿 가이드)
+            if [ "$slide_name" = "sample" ]; then
+              continue
+            fi
+            
+            if [ -f "$dir/slides.md" ]; then
+              echo "Building: $slide_name"
+              npx slidev build "$dir/slides.md" --base /${{ steps.repo.outputs.name }}/$slide_name/ --out dist/$slide_name
+              
+              # 인덱스에 링크 추가
+              echo "<li><a href=\"./$slide_name/\">📑 $slide_name</a></li>" >> dist/index.html
+            fi
+          done
+          
+          echo '</ul></body></html>' >> dist/index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

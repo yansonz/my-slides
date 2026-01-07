@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.pdf
+*.pptx
+.env
+.env.local
+.slidev/
+.vscode/
+.idea/
+*.log
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

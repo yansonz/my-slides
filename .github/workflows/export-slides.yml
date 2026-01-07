@@ -1,0 +1,40 @@
+name: 슬라이드 내보내기
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'slides/**'
+  workflow_dispatch:
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Node.js 설정
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    
+    - name: 의존성 설치
+      run: npm install
+    
+    - name: 슬라이드 내보내기
+      run: |
+        mkdir -p exports
+        for dir in slides/*/; do
+          name=$(basename "$dir")
+          echo "내보내기: $name"
+          npx slidev export "$dir/slides.md" --format pdf --output "exports/$name.pdf"
+          npx slidev export "$dir/slides.md" --format pptx --output "exports/$name.pptx"
+        done
+    
+    - name: 결과물 업로드
+      uses: actions/upload-artifact@v3
+      with:
+        name: exported-slides
+        path: exports/
+        retention-days: 30

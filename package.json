@@ -1,0 +1,20 @@
+{
+  "name": "slidev-presentations",
+  "version": "1.0.0",
+  "description": "기술 발표 슬라이드 관리 프로젝트",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export",
+    "export:pdf": "slidev export --format pdf",
+    "export:pptx": "slidev export --format pptx",
+    "slides:list": "ls -la slides/*/slides.md"
+  },
+  "dependencies": {
+    "@slidev/cli": "latest",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest"
+  },
+  "devDependencies": {}
+}
