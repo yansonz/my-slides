@@ -17,15 +17,26 @@ for slide_folder in "$SLIDES_DIR"/*; do
     
     echo "처리 중: $slide_name"
     
+    # slidev.config.ts에서 dark 설정 읽기
+    DARK_FLAG=""
+    if [ -f "$slide_folder/slidev.config.ts" ]; then
+      if grep -q "dark: true" "$slide_folder/slidev.config.ts"; then
+        DARK_FLAG="--dark"
+        echo "  → 다크 모드 적용"
+      fi
+    fi
+    
     # PDF 내보내기
     slidev export "$slide_folder/slides.md" \
       --format pdf \
-      --output "$EXPORT_DIR/$slide_name.pdf" 2>/dev/null
+      --output "$EXPORT_DIR/$slide_name.pdf" \
+      $DARK_FLAG 2>/dev/null
     
     # PPTX 내보내기
     slidev export "$slide_folder/slides.md" \
       --format pptx \
-      --output "$EXPORT_DIR/$slide_name.pptx" 2>/dev/null
+      --output "$EXPORT_DIR/$slide_name.pptx" \
+      $DARK_FLAG 2>/dev/null
     
     echo "  ✓ $slide_name 내보내기 완료"
   fi
