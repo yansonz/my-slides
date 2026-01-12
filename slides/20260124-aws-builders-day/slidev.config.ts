@@ -11,7 +11,7 @@ export default defineConfig({
   export: {
     format: 'pdf',
     timeout: 30000,
-    dark: false,
+    dark: true,
     withClicks: false,
   },
 })
