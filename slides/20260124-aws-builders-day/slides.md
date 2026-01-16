@@ -6,7 +6,7 @@ info: |
   https://event-us.kr/awskrug/event/118695
 author: Yan So
 date: 2026-01-24
-background: /images/bg1.png
+background: https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg1.webp
 ---
 
 ## 2026 AWS 신규 AI서비스와 트렌드 살펴보기
@@ -34,15 +34,15 @@ AWS re:Invent 2025 reCap
 - AWS한국사용자모임 운영진
   - #kiro #data
 - 링크드인
-<img src="/images/qr_linkedin.png" class="h-40">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/qr_linkedin.webp" class="h-40">
 
 </div>
 <div class="col-span-6 flex items-center justify-center">
-<img src="/images/profile.jpeg">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/profile.webp">
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -55,7 +55,7 @@ AWS re:Invent 2025 reCap
 4. Amazon Nova Forge - 커스텀 프론티어 모델
 5. 기타 AI 서비스 업데이트
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -89,7 +89,7 @@ AWS re:Invent 2025 reCap
 
 > 핵심 질문: 자유를 부여하면서도 의도된 경계 내에서 안전하게 행동하도록 보장하는 방법은?
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -105,21 +105,21 @@ AWS re:Invent 2025 reCap
 | 4 | **Observability** | 활동 추적 및 디버깅 |
 | 5 | **Evaluations** | 수행 결과 검증 |
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## AgentCore Runtime
 <br>
 
-<img src="/images/AIM3330_01.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330_01.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=ymwpOYMg1ng" target="_blank">AIM3330 - Keep Your Agents Out of Trouble with Amazon Bedrock AgentCore</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -152,21 +152,21 @@ AWS re:Invent 2025 reCap
 
 > 적대적 공격이 있더라도 데이터 접근이나 세션간 원치 않는 교차 발화 불가능
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## AgentCore Gateway
 <br>
 
-<img src="/images/AIM3330_02.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330_02.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=ymwpOYMg1ng" target="_blank">AIM3330 - Keep Your Agents Out of Trouble with Amazon Bedrock AgentCore</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -199,21 +199,21 @@ AWS re:Invent 2025 reCap
 
 > 예: 환불을 주지 않아야 하는 챗봇에게는 환불 도구를 제공하지 않음
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## AgentCore Policy
 <br>
 
-<img src="/images/AIM3330_06.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330_06.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=ymwpOYMg1ng" target="_blank">AIM3330 - Keep Your Agents Out of Trouble with Amazon Bedrock AgentCore</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -246,21 +246,21 @@ AWS re:Invent 2025 reCap
 
 > 에이전트는 사용 불가 도구를 보지 못함 -> 환각/루프 방지
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## AgentCore Identity
 <br>
 
-<img src="/images/AIM3330_03.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330_03.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=ymwpOYMg1ng" target="_blank">AIM3330 - Keep Your Agents Out of Trouble with Amazon Bedrock AgentCore</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -293,21 +293,21 @@ AWS re:Invent 2025 reCap
 
 > 여러 사용자 대신 작업 시 교차 간섭 방지
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## AgentCore Observability
 <br>
 
-<img src="/images/AIM3330_04.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330_04.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=ymwpOYMg1ng" target="_blank">AIM3330 - Keep Your Agents Out of Trouble with Amazon Bedrock AgentCore</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -340,21 +340,21 @@ AWS re:Invent 2025 reCap
 
 > 무엇이 일어나는지는 알 수 있지만, 무엇이 옳고 그른지는 Evaluation이 담당
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## AgentCore Evaluations
 <br>
 
-<img src="/images/AIM3330_05.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330_05.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=ymwpOYMg1ng" target="_blank">AIM3330 - Keep Your Agents Out of Trouble with Amazon Bedrock AgentCore</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -388,7 +388,7 @@ AWS re:Invent 2025 reCap
 
 > 도구 호출 성공 ≠ 에이전트가 유용했거나 목표 달성
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -407,7 +407,7 @@ AWS re:Invent 2025 reCap
 
 <br>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -422,7 +422,7 @@ AWS re:Invent 2025 reCap
 - HTTP API + WebSocket 실시간 스트리밍
 - 100MB 페이로드 처리 (멀티모달)
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -432,31 +432,31 @@ AWS re:Invent 2025 reCap
 <div class="grid grid-cols-10 gap-4 w-full">
 <div class="col-span-7">
 
-<img src="/images/AIM3330_07.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330_07.webp" class="h-90 mx-auto">
 
 </div>
 <div class="col-span-3 flex items-center justify-center">
 
-<img src="/images/diagram1.jpeg" class="h-100 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/diagram1.webp" class="h-100 mx-auto">
 
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## 추천세션
 <br>
 
-<img src="/images/AIM3330.png" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3330.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=ymwpOYMg1ng" target="_blank">AIM3330 - Keep Your Agents Out of Trouble with Amazon Bedrock AgentCore</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -476,21 +476,21 @@ AWS re:Invent 2025 reCap
 - 경쟁 모델 (GPT5, Cluade4.5 시리즈) 대비 압도적 가성비
 - 1M 토큰 지원, 멀티모달
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## Amazon Nova 2 모델 패밀리
 <br>
 
-<img src="/images/AIM3324_01.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/AIM3324_01.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=-nMiqOgQbHc&t=1s" target="_blank">AIM3324 - Amazon Nova 2 Omni: A new frontier in multimodal AI</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -512,7 +512,7 @@ AWS re:Invent 2025 reCap
 
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -542,7 +542,7 @@ AWS re:Invent 2025 reCap
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -552,14 +552,14 @@ AWS re:Invent 2025 reCap
 ### Ko-AgentBench (한국어 환경) 결과
 <br>
 
-<img src="/images/table1.jpeg" class="h-75 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/table1.webp" class="h-75 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://blog.wisen.co.kr/reinvent-2025-%ED%95%9C%EA%B5%AD%EC%96%B4-%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8-%EB%B2%A4%EC%B9%98%EB%A7%88%ED%81%AC%EB%A1%9C-aws-nova-2-lite-%EC%84%B1%EB%8A%A5-%EC%8B%AC%EC%B8%B5-%EB%B6%84%EC%84%9D" target="_blank"> 한국어 에이전트 벤치마크로 Amazon Nova 2 Lite 성능 심층 분석</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -578,7 +578,7 @@ AWS re:Invent 2025 reCap
 
 > Amazon Connect와 통합하여 30개 이상 언어로 자연스러운 대화 제공
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -597,7 +597,7 @@ AWS re:Invent 2025 reCap
 
 > 한국 지역 지원 안함
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -605,9 +605,9 @@ AWS re:Invent 2025 reCap
 ## Amazon Nova Act 데모
 <br>
 
-<img src="/images/demo.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/demo.webp" class="h-90 mx-auto">
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -640,7 +640,7 @@ AWS re:Invent 2025 reCap
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -670,7 +670,7 @@ AWS re:Invent 2025 reCap
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -707,7 +707,7 @@ AWS re:Invent 2025 reCap
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -728,7 +728,7 @@ AWS re:Invent 2025 reCap
 
 > 💡 학습률 비유: 웜업(첫날) → 학습(학기 중) → 어닐링(시험 전날)
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -738,27 +738,27 @@ AWS re:Invent 2025 reCap
 
 <div class="flex flex-col items-center gap-4">
 
-<img src="/images/nova-forge-price.jpeg" class="h-50 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/nova-forge-price.webp" class="h-50 mx-auto">
 
 <span class="text-8xl">🤦‍♂️</span>
 
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## 추천워크샵
 <br>
 
-<img src="/images/workshop1.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/workshop1.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://github.com/aws-samples/sample-building-intelligent-multimodal-applications-with-Nova" target="_blank">Building Intelligent Multimodal Applications with Amazon Nova2 Omni</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -796,7 +796,7 @@ AWS re:Invent 2025 reCap
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -808,7 +808,7 @@ AWS re:Invent 2025 reCap
 - 아이디어 구상 → 요구사항 → 태스크 → 실행까지 전 과정 지원
 - 개발자 생산성 5~20배 향상 가능
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -841,7 +841,7 @@ AWS re:Invent 2025 reCap
 
 > 프롬프트 → 요구사항 → 설계 → 코드/테스트/문서 자동 생성
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -881,7 +881,7 @@ AWS re:Invent 2025 reCap
 </div>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -902,7 +902,7 @@ AWS re:Invent 2025 reCap
 - **Stripe**: 결제 연동
 - **Datadog**: 모니터링 연동
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -938,7 +938,7 @@ AWS re:Invent 2025 reCap
 </div>
 
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -965,21 +965,21 @@ AWS re:Invent 2025 reCap
 2. 동시 AI 작업 확장 (커스텀 에이전트 군단)
 3. 단순 코딩 외 전체 SDLC(Software Development Life Cycle)로 AI 활용 확장
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## 추천세션
 <br>
 
-<img src="/images/INV205.jpeg" class="h-90 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/INV205.webp" class="h-90 mx-auto">
 <br>
 
 <div class="text-sm text-gray-400">
 🔗 <a href="https://www.youtube.com/watch?v=A8BYnqiHfeA" target="_blank">INV205 - Reinventing software development with AI agents</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -989,12 +989,12 @@ AWS re:Invent 2025 reCap
 <div class="grid grid-cols-10 gap-8 w-full">
 <div class="col-span-7">
 
-<img src="/images/kiro-welcome.jpeg" class="h-80 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/kiro-welcome.webp" class="h-80 mx-auto">
 
 </div>
 <div class="col-span-3 flex items-center justify-center">
 
-<img src="/images/qr_kiro.png" class="h-60 mx-auto">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/qr_kiro.webp" class="h-60 mx-auto">
 
 </div>
 </div>
@@ -1005,7 +1005,7 @@ AWS re:Invent 2025 reCap
 🔗 <a href="https://kiro.awskr.org" target="_blank">Kiro 한국 사용자 모임</a>
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -1035,7 +1035,7 @@ AWS re:Invent 2025 reCap
 
 > "AI 에이전트를 현실로 만드는 해" - Swami Sivasubramanian
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -1043,16 +1043,16 @@ AWS re:Invent 2025 reCap
 <br>
 
 <div class="grid grid-cols-12 grid-rows-2 gap-1 h-115 -mt-8 -mx-12">
-  <img src="/images/lv1.jpg" class="col-span-2 row-span-2 w-full h-full object-cover">
-  <img src="/images/lv2.jpg" class="col-span-4 w-full h-full object-cover">
-  <img src="/images/lv4.jpg" class="col-span-4 w-full h-full object-cover">
-  <img src="/images/lv3.jpg" class="col-span-2 row-span-2 w-full h-full object-cover">
-  <img src="/images/lv5.jpg" class="col-span-4 w-full h-full object-cover">
-  <img src="/images/lv6.jpg" class="col-span-2 w-full h-full object-cover">
-  <img src="/images/lv7.jpg" class="col-span-2 w-full h-full object-cover">
+  <img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/lv1.webp" class="col-span-2 row-span-2 w-full h-full object-cover">
+  <img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/lv2.webp" class="col-span-4 w-full h-full object-cover">
+  <img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/lv4.webp" class="col-span-4 w-full h-full object-cover">
+  <img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/lv3.webp" class="col-span-2 row-span-2 w-full h-full object-cover">
+  <img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/lv5.webp" class="col-span-4 w-full h-full object-cover">
+  <img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/lv6.webp" class="col-span-2 w-full h-full object-cover">
+  <img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/lv7.webp" class="col-span-2 w-full h-full object-cover">
 </div>
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -1068,7 +1068,7 @@ AWS re:Invent 2025 reCap
 - 개발자 네트워킹 (AWS라는 공통 주제)
 - 열심히 달려온 한해를 마무리하는 리프레시 기간 (라스베가스)
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
@@ -1086,13 +1086,13 @@ AWS re:Invent 2025 reCap
   - 관심있는 소모임 참석, 발표, 운영 등 활발한 활동
 - 프로그램별 여러 혜택과 기회 제공
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
 
 ## QnA
 <br>
 
-<img src="/images/qr_qna.png" class="h-60">
+<img src="https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/qr_qna.webp" class="h-60">
 
-<div class="absolute inset-0 -z-1 bg-[url(/images/bg2.png)] bg-cover bg-center"></div>
+<div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
