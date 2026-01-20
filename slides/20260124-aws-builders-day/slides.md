@@ -724,10 +724,6 @@ AWS re:Invent 2025 reCap
 | **3. SFT** | 응답 패턴 학습 (복종 훈련) | 명령어-응답 쌍 |
 | **4. RL** | 실제 환경에서 행동 정제 | 보상 신호 기반 |
 
-<br>
-
-> 💡 학습률 비유: 웜업(첫날) → 학습(학기 중) → 어닐링(시험 전날)
-
 <div class="absolute inset-0 -z-1 bg-[url(https://images.yanbert.com/my-slides/images/20260124-aws-builders-day/bg2.webp)] bg-cover bg-center"></div>
 
 ---
