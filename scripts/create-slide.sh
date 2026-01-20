@@ -76,4 +76,4 @@ EOF
 echo "✓ 슬라이드 생성 완료: $SLIDE_DIR"
 echo ""
 echo "다음 명령어로 슬라이드를 실행할 수 있습니다:"
-echo "  npm run dev -- $SLIDE_DIR"
+echo "  npm run dev -- $SLIDE_DIR/slides.md"
