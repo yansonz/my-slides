@@ -25,7 +25,12 @@ info: |
   기술 발표 슬라이드
 author: Your Name
 date: 2026-01-07
+css: unocss
 ---
+
+<script setup>
+import './style.css'
+</script>
 
 # 발표 제목
 
@@ -50,6 +55,29 @@ date: 2026-01-07
 ## 감사합니다!
 
 질문이 있으신가요?
+EOF
+
+# style.css 생성
+cat > "$SLIDE_DIR/style.css" << 'EOF'
+.slidev-layout h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.slidev-layout h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.slidev-layout h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* 일반 텍스트 - 슬라이드 전체 기본 폰트 크기 */
+.slidev-layout {
+  font-size: 1.5rem;
+}
 EOF
 
 # slidev.config.ts 생성
