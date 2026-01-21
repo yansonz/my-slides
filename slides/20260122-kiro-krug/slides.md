@@ -1,11 +1,11 @@
 ---
 theme: default
-title: 발표 제목
+title: 제1회 Kiro 한국 사용자 모임
 info: |
   ## 발표 제목
-  기술 발표 슬라이드
-author: Your Name
-date: 2026-01-07
+  제1회 Kiro 한국 사용자 모임
+author: Yan So
+date: 2026-01-22
 css: unocss
 ---
 
@@ -15,7 +15,7 @@ import './style.css'
 
 # Kiro 한국 사용자 모임
 
-20 Jan 2026
+22 Jan 2026
 
 <div class="absolute bottom-10">
   <span class="font-700">
@@ -31,6 +31,17 @@ layout: fact
 
 ---
 
+## 출석체크
+<br>
+
+<img src="https://images.yanbert.com/my-slides/images/20260122-kiro-krug/05.webp" class="h-85 mx-auto">
+
+<div class="text-center">
+https://checkin.awskr.org/kiro/0122ZZV
+</div>
+
+---
+
 ## 운영자 소개
 <br> 
 
@@ -43,7 +54,7 @@ layout: fact
 ## 목차
 <br>
 
-- Kiro Powers
+- Kiro Powers 소개
 - 라이트닝 토크
 
 ---
@@ -51,14 +62,22 @@ layout: fact
 ## 어떤 AI코딩툴을 사용하고 계신가요?
 <br>
 
-(qnet 설문추가)
+Kiro, Claude Code, Codex, Cursor 등등 사용하시는 AI코딩툴을 알려주세요
+<br>
+<br>
+
+<img src="https://images.yanbert.com/my-slides/images/20260122-kiro-krug/03.webp" class="h-70 mx-auto mt-4">
 
 ---
 
 ## QnA는 여기에 남겨주세요
 <br>
 
-(Qna QR 추가)
+동일 링크 입니다.
+<br>
+<br>
+
+<img src="https://images.yanbert.com/my-slides/images/20260122-kiro-krug/03.webp" class="h-70 mx-auto mt-4">
 
 ---
 
@@ -72,6 +91,13 @@ layout: fact
 - 키워드 기반 동적 로딩 (컨텍스트 윈도우 절약)
 - Figma, Stripe, Supabase, Datadog 등 파트너 Powers 제공
 - 커스텀 Power 직접 제작 가능
+
+---
+
+## Kiro Powers
+<br>
+
+<img src="https://images.yanbert.com/my-slides/images/20260122-kiro-krug/04.webp" class="h-105 object-contain">
 
 ---
 
@@ -119,7 +145,7 @@ my-power/
 
 ### Strands Agents SDK Power
 - AI 에이전트 개발을 위한 오픈소스 SDK
-- Bedrock, Anthropic, OpenAI, Gemini, Llama 모델 지원
+- Amazon bedrock, Anthropic, OpenAI, Gemini, Llama 모델 지원
 
 <br>
 
@@ -160,8 +186,9 @@ response = agent("서울 날씨 알려줘")
 ---
 
 ## 실제로 해봅시다!
+<br>
 
-(strands agent를 만드는 데모)
+💻 strands agent를 만드는 데모
 
 ---
 
@@ -246,7 +273,7 @@ response = agent("서울 날씨 알려줘")
 ## Custom Power 도 만들어 봅시다!
 <br>
 
-(Kiro Power를 만드는 Power로 n8n Power 만들어보기 데모)
+💻 Kiro Power를 만드는 Power로 n8n Power 만들어보기 데모
 
 ---
 
@@ -261,5 +288,13 @@ response = agent("서울 날씨 알려줘")
 ---
 
 ## 감사합니다!
+
+다음 모임은 2/12(목) 예정입니다👻
+
+<div class="flex gap-4 justify-center items-center mt-8">
+  <img src="https://images.yanbert.com/my-slides/images/20260122-kiro-krug/01.webp" class="h-90">
+  <img src="https://images.yanbert.com/my-slides/images/20260122-kiro-krug/02.webp" class="h-50">
+</div>
+
 
 
