@@ -1,5 +1,6 @@
 ---
 theme: default
+colorSchema: dark
 title: 2026 신규 AI서비스와 트렌드 살펴보기
 info: |
   AWS Builders Day 2026 발표자로 참가
