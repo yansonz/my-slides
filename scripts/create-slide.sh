@@ -11,20 +11,35 @@ fi
 SLIDE_NAME=$1
 SLIDE_DIR="slides/$SLIDE_NAME"
 
+# 폴더명에서 날짜 추출 (YYYYMMDD 형식이 있으면 사용, 없으면 오늘 날짜)
+if [[ "$SLIDE_NAME" =~ ^([0-9]{4})([0-9]{2})([0-9]{2}) ]]; then
+  YEAR="${BASH_REMATCH[1]}"
+  MONTH="${BASH_REMATCH[2]}"
+  DAY="${BASH_REMATCH[3]}"
+else
+  YEAR=$(date +%Y)
+  MONTH=$(date +%m)
+  DAY=$(date +%d)
+fi
+
+# 슬라이드 표시용 날짜 포맷 (DD Mon YYYY)
+DISPLAY_DATE="$DAY $(date -j -f '%m' "$MONTH" '+%b' 2>/dev/null || date -d "${YEAR}-${MONTH}-01" '+%b' 2>/dev/null) $YEAR"
+ISO_DATE="${YEAR}-${MONTH}-${DAY}"
+
 # 폴더 생성
 mkdir -p "$SLIDE_DIR/public"
 mkdir -p "$SLIDE_DIR/components"
 
 # slides.md 생성
-cat > "$SLIDE_DIR/slides.md" << 'EOF'
+cat > "$SLIDE_DIR/slides.md" << EOF
 ---
 theme: default
 title: 발표 제목
 info: |
   ## 발표 제목
   기술 발표 슬라이드
-author: Your Name
-date: 2026-01-07
+author: Yan So
+date: ${ISO_DATE}
 css: unocss
 ---
 
@@ -34,7 +49,13 @@ import './style.css'
 
 # 발표 제목
 
-부제목
+${DISPLAY_DATE}
+
+<div class="absolute bottom-10">
+  <span class="font-700">
+    Yan So
+  </span>
+</div>
 
 ---
 
