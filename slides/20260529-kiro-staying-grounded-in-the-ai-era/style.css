@@ -1,0 +1,37 @@
+.slidev-layout h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.slidev-layout h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.slidev-layout h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* 일반 텍스트 - 슬라이드 전체 기본 폰트 크기 */
+.slidev-layout {
+  font-size: 1.5rem;
+}
+
+/* AI 연대기 테이블 열 너비 고정 */
+.timeline-table table {
+  table-layout: fixed;
+  width: 100%;
+}
+.timeline-table table th:nth-child(1),
+.timeline-table table td:nth-child(1) {
+  width: 12%;
+}
+.timeline-table table th:nth-child(2),
+.timeline-table table td:nth-child(2) {
+  width: 38%;
+}
+.timeline-table table th:nth-child(3),
+.timeline-table table td:nth-child(3) {
+  width: 50%;
+}
