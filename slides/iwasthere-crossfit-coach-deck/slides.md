@@ -249,12 +249,12 @@ mdc: true
   <a href="https://iwasthere.pics" class="cta-button">무료로 시작하기 →</a>
 
   <div style="margin-top: 2.5rem; opacity: 0.7; font-size: 0.85rem;">
-    https://iwasthere.pics
+    <a href="https://iwasthere.pics" target="_blank" style="color: inherit; text-decoration: none;">https://iwasthere.pics</a>
   </div>
 
   <div class="iwt-contact">
     <span>✉️ support@iwasthere.pics</span>
-    <span>📷 @whyyanbertmove</span>
+    <span>📷 <a href="http://instagram.com/whyyanmoves" target="_blank" style="color: inherit; text-decoration: none;">@whyyanmoves</a></span>
     <span>📞 010-5665-9614</span>
   </div>
 </div>
