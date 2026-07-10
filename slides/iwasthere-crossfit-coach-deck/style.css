@@ -1,0 +1,500 @@
+/* ============================================
+   iwasthere Sales Deck — Design System
+   Brand: #0056ed (Primary Blue), White, Slate
+   Tone: Minimal, Clean, Trustworthy
+   ============================================ */
+
+:root {
+  --iwt-primary: #0056ed;
+  --iwt-primary-light: #e8f0ff;
+  --iwt-primary-dark: #003db3;
+  --iwt-white: #ffffff;
+  --iwt-black: #1a1a2e;
+  --iwt-gray-50: #f8fafc;
+  --iwt-gray-100: #f1f5f9;
+  --iwt-gray-200: #e2e8f0;
+  --iwt-gray-400: #94a3b8;
+  --iwt-gray-600: #475569;
+  --iwt-gray-800: #1e293b;
+  --iwt-accent: #00c2ff;
+  --iwt-success: #10b981;
+  --iwt-font-heading: 'Pretendard', 'Inter', system-ui, sans-serif;
+  --iwt-font-body: 'Pretendard', 'Inter', system-ui, sans-serif;
+}
+
+/* ─── Global ─────────────────────────────── */
+.slidev-layout {
+  font-family: var(--iwt-font-body);
+  color: var(--iwt-gray-800);
+  overflow: hidden;
+}
+
+.slidev-layout > div:first-child {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--iwt-font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Cover Slide ────────────────────────── */
+.iwt-cover {
+  background: var(--iwt-primary);
+  color: var(--iwt-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.iwt-cover h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.iwt-cover p {
+  font-size: 1.25rem;
+  opacity: 0.85;
+  max-width: 600px;
+}
+
+.iwt-cover .logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2rem;
+}
+
+/* ─── Section Divider ────────────────────── */
+.iwt-section {
+  background: var(--iwt-primary);
+  color: var(--iwt-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 6rem;
+}
+
+.iwt-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.iwt-section p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+/* ─── Content Slides (White BG) ──────────── */
+.iwt-content {
+  background: var(--iwt-white);
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.iwt-content h2 {
+  font-size: 1.3rem;
+  color: var(--iwt-gray-800);
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Problem Slide ──────────────────────── */
+.iwt-problem {
+  background: var(--iwt-gray-50);
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.iwt-problem .pain-point {
+  background: var(--iwt-white);
+  border-left: 4px solid var(--iwt-primary);
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 0.65rem;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.iwt-problem .pain-point h3 {
+  font-size: 1rem;
+  color: var(--iwt-gray-800);
+  margin-bottom: 0.2rem;
+}
+
+.iwt-problem .pain-point p {
+  font-size: 0.85rem;
+  color: var(--iwt-gray-600);
+  line-height: 1.4;
+}
+
+/* ─── Solution Slide ─────────────────────── */
+.iwt-solution {
+  background: var(--iwt-white);
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+}
+
+.feature-card {
+  background: var(--iwt-gray-50);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--iwt-gray-200);
+  transition: all 0.2s ease;
+}
+
+.feature-card:hover {
+  border-color: var(--iwt-primary);
+  box-shadow: 0 4px 12px rgba(0, 86, 237, 0.1);
+}
+
+.feature-card .icon {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.feature-card h3 {
+  font-size: 0.9rem;
+  color: var(--iwt-gray-800);
+  margin-bottom: 0.25rem;
+}
+
+.feature-card p {
+  font-size: 0.75rem;
+  color: var(--iwt-gray-600);
+  line-height: 1.35;
+}
+
+/* ─── Pricing Slide ──────────────────────── */
+.iwt-pricing {
+  background: var(--iwt-white);
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.iwt-pricing .pricing-subtitle {
+  font-size: 0.85rem;
+  color: var(--iwt-gray-400);
+  margin-bottom: 0.75rem;
+}
+
+.iwt-pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.iwt-pricing .pricing-card {
+  background: var(--iwt-gray-50);
+  border-radius: 14px;
+  padding: 0.85rem 1.1rem;
+  text-align: center;
+  border: 2px solid var(--iwt-gray-200);
+  position: relative;
+}
+
+.iwt-pricing .pricing-card.featured {
+  border-color: var(--iwt-primary);
+  background: var(--iwt-primary-light);
+}
+
+.iwt-pricing .pricing-card.featured::before {
+  content: '30일 무료 체험 중';
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--iwt-primary);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.9rem;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.iwt-pricing .pricing-card h3 {
+  font-size: 0.85rem;
+  color: var(--iwt-gray-600);
+  margin-bottom: 0.25rem;
+}
+
+.iwt-pricing .pricing-card .price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--iwt-gray-800);
+  margin-bottom: 0.5rem;
+}
+
+.iwt-pricing .pricing-card .price span {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--iwt-gray-400);
+}
+
+.iwt-pricing .pricing-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 0.75rem;
+  color: var(--iwt-gray-600);
+}
+
+.iwt-pricing .pricing-card ul li {
+  padding: 0.16rem 0;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.iwt-pricing .pricing-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--iwt-primary);
+  font-weight: 700;
+}
+
+/* ─── Stats / Social Proof ───────────────── */
+.iwt-stats {
+  background: var(--iwt-white);
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.iwt-stats .stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.iwt-stats .stat-item .number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--iwt-primary);
+  line-height: 1;
+}
+
+.iwt-stats .stat-item .label {
+  font-size: 0.95rem;
+  color: var(--iwt-gray-600);
+  margin-top: 0.5rem;
+}
+
+/* ─── CTA Slide ──────────────────────────── */
+.iwt-cta {
+  background: linear-gradient(135deg, var(--iwt-primary) 0%, var(--iwt-primary-dark) 100%);
+  color: var(--iwt-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.iwt-cta h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.iwt-cta p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-bottom: 1.75rem;
+  max-width: 500px;
+}
+
+.iwt-cta .cta-button {
+  display: inline-block;
+  background: var(--iwt-white);
+  color: var(--iwt-primary);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.9rem 2.5rem;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iwt-cta .cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* ─── Utilities ──────────────────────────── */
+
+/* 헤더(배지+타이틀) — 모든 콘텐츠 슬라이드에서 절대 위치로 고정.
+   콘텐츠 양과 무관하게 항상 동일한 좌표에 위치한다. */
+.iwt-header {
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  right: 4rem;
+  height: 5.5rem;
+  box-sizing: border-box;
+}
+
+.iwt-badge {
+  display: inline-block;
+  background: var(--iwt-primary-light);
+  color: var(--iwt-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  height: 1.75rem;
+  line-height: 1.15rem;
+  box-sizing: border-box;
+}
+
+.iwt-header h1 {
+  font-size: 1.7rem;
+  color: var(--iwt-black);
+  margin: 0.6rem 0 0 0;
+}
+
+/* 본문 영역 — 헤더 아래 남는 공간 전체를 차지. 콘텐츠는 이 안에서만 자유롭게 배치된다. */
+.iwt-body {
+  position: absolute;
+  top: 7.5rem;
+  left: 4rem;
+  right: 4rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Problem 슬라이드는 카드 3개가 본문 공간을 거의 채우므로 상단 정렬 유지 */
+.iwt-problem .iwt-body {
+  justify-content: flex-start;
+}
+
+/* 카드 그리드가 본문의 대부분을 차지하는 슬라이드는 상단 정렬 + 카드 자체를 크게 */
+.iwt-body-top {
+  justify-content: flex-start !important;
+}
+
+.iwt-highlight {
+  color: var(--iwt-primary);
+  font-weight: 700;
+}
+
+.iwt-divider {
+  width: 60px;
+  height: 4px;
+  background: var(--iwt-primary);
+  border-radius: 2px;
+  margin: 1rem 0;
+}
+
+.iwt-footnote {
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  font-size: 0.75rem;
+  color: var(--iwt-gray-400);
+}
+
+/* 실제 서비스 캡처/영상이 필요한 영역 — 실제 삽입될 이미지 크기만큼 자리를 확보 */
+.iwt-placeholder {
+  border: 2px dashed var(--iwt-gray-200);
+  border-radius: 10px;
+  color: var(--iwt-gray-400);
+  background: var(--iwt-gray-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* 실제 영상/이미지가 채워질 미디어 영역 — placeholder와 동일한 자리(크기)를 그대로 사용 */
+.iwt-media {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: var(--iwt-gray-50);
+}
+
+.iwt-media video,
+.iwt-media iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  object-fit: contain;
+}
+
+/* 카드 영역(왼쪽 70%) + 캡처 placeholder(오른쪽 30%) 레이아웃 — .iwt-body 높이를 그대로 채움 */
+.iwt-70-30 {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 1.5rem;
+  flex: 1;
+  min-height: 0;
+  align-items: stretch;
+}
+
+.iwt-70-30 > * {
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* ─── Two Column Layout ──────────────────── */
+.iwt-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  height: 100%;
+}
+
+/* ─── Slide Number ───────────────────────── */
+.slidev-page-number {
+  color: var(--iwt-gray-400);
+  font-size: 0.75rem;
+}
