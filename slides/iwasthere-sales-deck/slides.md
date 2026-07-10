@@ -210,4 +210,10 @@ mdc: true
   <div style="margin-top: 2.5rem; opacity: 0.7; font-size: 0.85rem;">
     https://iwasthere.pics
   </div>
+
+  <div class="iwt-contact">
+    <span>✉️ support@iwasthere.pics</span>
+    <span>📷 @whyyanbertmove</span>
+    <span>📞 010-5665-9614</span>
+  </div>
 </div>

@@ -357,6 +357,17 @@ h1, h2, h3, h4 {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
+/* CTA 슬라이드 하단 문의처 (이메일/인스타/전화번호) */
+.iwt-contact {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* ─── Utilities ──────────────────────────── */
 
 /* 헤더(배지+타이틀) — 모든 콘텐츠 슬라이드에서 절대 위치로 고정.
